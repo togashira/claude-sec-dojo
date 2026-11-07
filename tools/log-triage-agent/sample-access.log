@@ -1,0 +1,14 @@
+2026-11-01 08:58:12 fw01 AUTH_OK src=10.0.1.23 user=tanaka
+2026-11-01 09:02:41 fw01 CONN_OK src=10.0.1.23 dst=10.0.2.5 port=443
+2026-11-01 09:15:03 fw01 AUTH_OK src=10.0.1.47 user=sato
+2026-11-01 13:20:55 fw01 CONN_OK src=10.0.1.47 dst=10.0.2.5 port=443
+2026-11-01 23:40:01 fw01 AUTH_FAIL src=203.0.113.44 user=admin
+2026-11-01 23:40:02 fw01 AUTH_FAIL src=203.0.113.44 user=admin
+2026-11-01 23:40:03 fw01 AUTH_FAIL src=203.0.113.44 user=admin
+2026-11-01 23:40:04 fw01 AUTH_FAIL src=203.0.113.44 user=admin
+2026-11-01 23:40:05 fw01 AUTH_FAIL src=203.0.113.44 user=admin
+2026-11-01 23:40:06 fw01 AUTH_FAIL src=203.0.113.44 user=root
+2026-11-01 23:40:07 fw01 AUTH_FAIL src=203.0.113.44 user=root
+2026-11-02 03:02:10 fw01 AUTH_OK src=198.51.100.9 user=svc-backup
+2026-11-02 09:05:00 fw01 AUTH_OK src=10.0.1.23 user=tanaka
+2026-11-02 09:30:44 fw01 CONN_OK src=10.0.1.23 dst=10.0.2.5 port=443

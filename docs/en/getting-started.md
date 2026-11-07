@@ -1,35 +1,39 @@
 # Getting Started
 
-## What is Claude
+## What you'll learn here
 
-Claude is an AI (large language model) built by Anthropic. It's good at reading and understanding text and responding in kind, which makes it useful for management work such as:
+This isn't about attack technique. It's about **understanding and responding to situations from a security angle, in the networking/cloud/server work you already do.** Specifically:
 
-- Pulling key points, decisions, and action items out of meeting notes
-- Drafting reports and status updates
-- Organizing options to support a decision
-- Drafting or improving emails and internal documents
-- Summarizing contracts or proposals and flagging risks
+- Spotting suspicious behavior in logs and triaging by priority
+- Reviewing cloud (AWS/Azure) configurations from a security angle
+- Organizing the facts and writing a clear report when something happens
 
-**Important assumption:** Claude is a useful drafting-and-organizing partner, but the final call is still yours. Anything touching legal, financial, or HR matters should always be reviewed by a human.
+These are things any networking or cloud engineer runs into day to day, security specialist or not.
+
+## How to use Claude here
+
+Think of Claude as a partner with security knowledge on tap:
+
+- Have it read a long log and summarize what matters
+- Have it review a config file (IaC or otherwise) and point out risks
+- Use it to organize what to check first during initial incident response
+
+**Important assumption:** Claude's findings are a starting point — the final call and the actual response are still yours. Any action that touches production must be reviewed and approved by a human. Also be careful not to paste real production secrets (actual logs, credentials, customer data) in as-is.
 
 ## Two ways to use it
 
 ### 1. Chat (no programming needed)
 
-Create an account at [claude.ai](https://claude.ai) and you can start asking Claude for help right away, in a chat interface. Copy a prompt from [templates/en/](../../templates/en/) and paste it in.
+Create an account at [claude.ai](https://claude.ai) and start asking Claude for help right away. Copy a prompt from [templates/en/](../../templates/en/) and paste it in.
 
-This is the easiest way to start. **Start here.**
+**Start here.**
 
 ### 2. Tools / automation (some technical knowledge needed)
 
-If you want to integrate Claude into an internal system or auto-generate recurring reports, you'll use the Claude API (the developer-facing interface). See examples under [tools/](../../tools/) in this repository.
-
-If you have no programming background, we recommend working with your IT team or an engineer on this.
+If you want to automate recurring log review, use the Claude API. See [tools/](../../tools/) for an example.
 
 ## Your first step
 
-1. Open [templates/en/decision-support-prompt.md](../../templates/en/decision-support-prompt.md)
-2. Copy it and fill in the `[ ]` placeholders for your situation
-3. Paste it into [claude.ai](https://claude.ai) and review the result
-
-Once you're comfortable, check [use-cases.md](use-cases.md) for more ideas.
+1. Read [learning-path.md](learning-path.md) to see the suggested order
+2. Start with [modules/01-network-log-analysis/README.md](../../modules/01-network-log-analysis/README.md)
+3. Once comfortable, try the prompts in [templates/en/](../../templates/en/) against your own (anonymized) logs or configs

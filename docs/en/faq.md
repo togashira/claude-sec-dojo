@@ -1,16 +1,16 @@
 # FAQ
 
-**Q. Is it free to use?**
-[claude.ai](https://claude.ai) has a free tier you can try first. As your usage grows, consider a paid plan or the API.
+**Q. Can I learn attack techniques (penetration testing, etc.) here?**
+No. This repository deliberately scopes itself to defensive practice — detection, triage, and reporting. If you want to learn offensive techniques, look for properly authorized CTF platforms or dedicated courses elsewhere.
 
-**Q. Can I input information I can't share outside my company?**
-Check Anthropic's terms of service and privacy policy, and follow your company's security policy. Be careful with sensitive information (personal data, unpublished financial figures) — anonymize or abstract it where possible. We also recommend trying the templates in this repository with dummy data before using real data.
+**Q. Can I paste real logs or config files into Claude?**
+We don't recommend it. Real internal logs, credentials, and customer data can contain personal or sensitive information. The hands-on exercises here assume dummy data. If you need to work with real data, follow your company's security policy and data-handling rules, and anonymize or sample it first.
 
-**Q. Can I use Claude's output as-is?**
-Treat it as a draft or first pass, and always have a human review and revise it before use — especially for anything external-facing, or touching legal, financial, or HR matters.
+**Q. Should I just trust Claude's findings ("this looks suspicious", "this is risky")?**
+Treat them as a starting point. Claude is good at surfacing possible anomalies and risks, but it also produces false positives. The final judgment and response should come from a human who knows the actual situation.
 
 **Q. I can't program. Can I still use what's under `tools/`?**
-`tools/` requires basic Python knowledge. Start with the prompts under `templates/` in chat form at [claude.ai](https://claude.ai). If you want to use the tools, we recommend working with an engineer on your team.
+`tools/` requires basic Python knowledge. Start with `modules/` and `templates/` in chat form at [claude.ai](https://claude.ai) first.
 
-**Q. Which plan or model should I choose?**
-It depends on your use case. For everyday writing, organizing, and summarizing, a standard plan is often enough. See [Anthropic's official pricing page](https://www.anthropic.com) for details. This repository does not endorse a specific plan.
+**Q. Is this useful even if my company has a dedicated security team?**
+Yes. This isn't a replacement for a specialist team — it's meant to raise the quality of first-pass review and initial response from infrastructure/cloud engineers on the ground, which also makes escalation to the specialist team faster and more accurate.
