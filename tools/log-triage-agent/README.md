@@ -40,7 +40,7 @@ python agent.py sample-access.log --lang en
 - **実際の本番ログを入力しないでください。** 本ツールはダミーデータでの学習・検証を想定しています。実ログには個人情報・機密情報が含まれる可能性があります
 - このツールはAPI呼び出しのたびに料金が発生します。料金は[Anthropic公式サイト](https://www.anthropic.com)でご確認ください
 - 出力される「異常の可能性」は候補であり、誤検知を含みます。必ず人間が確認してから対応してください
-- 本ツールは検知の下書きを支援するものであり、SIEM等の専門ツールの代替ではありません
+- 本ツールは検知の下書きを支援するものであり、SIEM(Security Information and Event Management。大量のログを集めて自動で監視する専門ツール)等の代替ではありません
 
 ## English
 
@@ -79,4 +79,4 @@ python agent.py sample-access.log --lang ja
 - **Never feed this tool a real production log.** It's meant for learning and testing with dummy data — real logs can contain personal or sensitive information
 - Every run of this tool calls the API and incurs cost — see [Anthropic's pricing page](https://www.anthropic.com) for current rates
 - The "possible anomalies" it outputs are candidates and can include false positives — always have a human review them before acting
-- This tool assists with a first-pass draft; it is not a substitute for a dedicated SIEM or security tool
+- This tool assists with a first-pass draft; it is not a substitute for a dedicated SIEM (Security Information and Event Management — a specialized tool that collects and auto-monitors large volumes of logs) or other security tool

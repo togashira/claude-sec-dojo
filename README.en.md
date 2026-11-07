@@ -21,6 +21,16 @@ This repository focuses on building **defensive practice — detection, triage, 
 
 **Scope of this repository:** defensive practice only — log analysis, configuration review, incident reporting. It does not cover attack techniques or penetration-testing methodology against real systems.
 
+## How this differs from other security-learning OSS
+
+Plenty of OSS projects teach security. What this one is aiming for isn't "material written by a security expert, aimed at beginners" — it's **material that assumes zero jargon going in.**
+
+- Every technical term is explained in plain language the moment it appears — never "see the glossary later"
+- The goal is: someone who already knows a term can skim past it, and someone who doesn't can still understand the page on its own
+- Every hands-on exercise is self-contained with invented dummy data — no special environment setup required
+
+This comes directly from the author's own experience as a corporate AWS/Azure trainer, explaining technical material to people unfamiliar with it.
+
 ## Quick start
 
 1. Read [docs/en/getting-started.md](docs/en/getting-started.md)

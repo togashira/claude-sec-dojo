@@ -2,7 +2,7 @@
 
 ## When to use it
 
-You have vulnerability scan results or a list of CVEs and need to prioritize what to act on first.
+You have vulnerability (a weakness in software or a system that could be exploited) scan results, or a list of CVEs (a worldwide ID number given to each known vulnerability), and need to prioritize what to act on first.
 
 ## Prompt
 
